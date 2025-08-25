@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link In Bio - Nurmajid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 25%, #ffd3b6 50%, #ffaaa5 75%, #ff8b94 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .container {
+            max-width: 480px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 4px solid #ff6b6b;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #ff6b6b, #ffd166, #06d6a0, #118ab2, #073b4c);
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff6b6b;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #073b4c;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .description {
+            color: #118ab2;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .link-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 18px 25px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #073b4c;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ffd166;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .link-item.whatsapp:hover {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+        
+        .link-item.tiktok:hover {
+            background: linear-gradient(135deg, #000000, #00f2ea, #ff0050);
+            color: white;
+        }
+        
+        .link-icon {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            width: 30px;
+            text-align: center;
+        }
+        
+        .whatsapp .link-icon {
+            color: #25D366;
+        }
+        
+        .tiktok .link-icon {
+            color: #000000;
+        }
+        
+        .mario-decoration {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        
+        .mario-1 {
+            top: 10%;
+            left: 5%;
+        }
+        
+        .mario-2 {
+            top: 20%;
+            right: 7%;
+        }
+        
+        .mario-3 {
+            bottom: 15%;
+            left: 10%;
+        }
+        
+        .mario-4 {
+            bottom: 25%;
+            right: 8%;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #073b4c;
+            font-weight: 500;
+            margin-top: auto;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 14px;
+            width: 100%;
+            max-width: 480px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .link-item {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mario-decoration mario-1">🍄</div>
+    <div class="mario-decoration mario-2">⭐</div>
+    <div class="mario-decoration mario-3">🐢</div>
+    <div class="mario-decoration mario-4">🟥</div>
+    
+    <div class="container">
+        <header>
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Profil" class="profile-img">
+            <h1>NURMAJID AHMAD HASAN</h1>
+            <p class="description">Pelajar</p>
+        </header>
+        
+        <div class="links">
+            <a href="https://wa.me/62895401563386" class="link-item whatsapp" target="_blank">
+                <span class="link-icon"><i class="fab fa-whatsapp"></i></span>
+                <span>WA: +62 895-4015-63386</span>
+            </a>
+            
+            <a href="https://www.tiktok.com/@satusatu.0" class="link-item tiktok" target="_blank">
+                <span class="link-icon"><i class="fab fa-tiktok"></i></span>
+                <span>Tiktok: @satusatu.0</span>
+            </a>
+        </div>
+        
+        <footer>
+            <p>© 2025 - mybio</p>
+        </footer>
+    </div>
+
+    <script>
+        // Animasi fade-in saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = "1";
+            
+            // Tambahkan efek suara Mario saat hover (opsional)
+            const links = document.querySelectorAll('.link-item');
+            const marioSound = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAAAAAA');
+            
+            links.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    // Efek visual sudah ditangani oleh CSS
+                    // Untuk efek suara, bisa diuncomment jika ingin menambahkan
+                    // marioSound.play();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
